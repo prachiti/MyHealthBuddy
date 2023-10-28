@@ -26,6 +26,7 @@ class BPMonitorViewModel: ObservableObject {
                                     diastolic:diastolic,
                                     date:Date().timeIntervalSince1970)
         print("Record Called", systolic, diastolic,date)
+        print("Record Called....", systolic, diastolic,date)
         
         let db = Firestore.firestore()
         db.collection("BPMonitor")
